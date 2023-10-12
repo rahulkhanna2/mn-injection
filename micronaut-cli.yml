@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.demo
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [app-name, graalvm, http-client, java, java-application, junit, kafka, logback, lombok, maven, maven-enforcer-plugin, micronaut-aop, micronaut-aot, micronaut-http-validation, mockito, netty-server, openapi, properties, reactor, reactor-http-client, readme, security-annotations, security-jwt, serialization-jackson, shade, test-resources, tracing-opentelemetry-exporter-logging, tracing-opentelemetry-exporter-otlp]

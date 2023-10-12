@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: injection
+
+kafka:
+  disabled-users: ${KAFKA_DISABLED_USERS:`Geoaddressing_perf_user@precisely.testinator.com`}
+  health:
+    enabled: false
+  enabled: ${KAFKA_ENABLED:false}
+  headers:
+    type: ConsumptionEvent
