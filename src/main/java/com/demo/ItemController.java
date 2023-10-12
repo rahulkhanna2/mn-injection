@@ -31,6 +31,7 @@ public class ItemController {
 
     @Get("/")
     public List<Item> listItems() {
+        cache.put("x", "y");
         MutableHttpRequest<Item> request = HttpRequest.GET("https://random-data-api.com/api/address/random_address");
         Mono<String> response = restClientService.externalApiCall(request, UUID.randomUUID().toString(), String.class)
                 .map(data -> {
